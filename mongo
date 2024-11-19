@@ -1,0 +1,121 @@
+
+db.Clientes.insertMany([
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a01"), nombre: "Patricia Romero", edad: 34, email: "patricia.romero@example.com", ciudad: "Barranquilla" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a02"), nombre: "Carlos Pérez", edad: 28, email: "carlos.perez@example.com", ciudad: "Medellín" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a03"), nombre: "Ana Martínez", edad: 25, email: "ana.martinez@example.com", ciudad: "Cali" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a04"), nombre: "Luis Gómez", edad: 40, email: "luis.gomez@example.com", ciudad: "Bogotá" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a05"), nombre: "Sofia Pérez", edad: 31, email: "sofia.perez@example.com", ciudad: "Barranquilla" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a06"), nombre: "Jorge Díaz", edad: 45, email: "jorge.diaz@example.com", ciudad: "Medellín" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a07"), nombre: "Isabel Fernández", edad: 38, email: "isabel.fernandez@example.com", ciudad: "Cali" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a08"), nombre: "Fernando Gómez", edad: 33, email: "fernando.gomez@example.com", ciudad: "Bogotá" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a09"), nombre: "Raquel Sánchez", edad: 29, email: "raquel.sanchez@example.com", ciudad: "Barranquilla" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a10"), nombre: "Miguel Torres", edad: 39, email: "miguel.torres@example.com", ciudad: "Medellín" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a11"), nombre: "Laura García", edad: 26, email: "laura.garcia@example.com", ciudad: "Cali" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a12"), nombre: "David Martínez", edad: 41, email: "david.martinez@example.com", ciudad: "Bogotá" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a13"), nombre: "Andrea López", edad: 30, email: "andrea.lopez@example.com", ciudad: "Barranquilla" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a14"), nombre: "Antonio Ramírez", edad: 42, email: "antonio.ramirez@example.com", ciudad: "Medellín" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a15"), nombre: "Eva Fernández", edad: 37, email: "eva.fernandez@example.com", ciudad: "Cali" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a16"), nombre: "Oscar Ruiz", edad: 34, email: "oscar.ruiz@example.com", ciudad: "Bogotá" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a17"), nombre: "Hilda Castro", edad: 28, email: "hilda.castro@example.com", ciudad: "Barranquilla" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a18"), nombre: "Pedro Ortega", edad: 32, email: "pedro.ortega@example.com", ciudad: "Medellín" },
+   { _id: ObjectId("63e3a1f0e1b4b3f90a1a1a19"), nombre: "Marta Pérez", edad: 39, email: "marta.perez@example.com", ciudad: "Cali" }
+]);
+
+
+db.Ventas.insertMany([
+   { producto: "Mouse inalámbrico", cantidad: 1, precio: 14, fecha: ISODate("2024-11-12T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a01") },
+   { producto: "Teclado mecánico", cantidad: 2, precio: 50, fecha: ISODate("2024-11-13T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a02") },
+   { producto: "Monitor 24\"", cantidad: 1, precio: 200, fecha: ISODate("2024-11-14T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a03") },
+   { producto: "Mochila para laptop", cantidad: 3, precio: 35, fecha: ISODate("2024-11-15T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a04") },
+   { producto: "Lámpara LED", cantidad: 1, precio: 25, fecha: ISODate("2024-11-16T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a05") },
+   { producto: "Silla ergonómica", cantidad: 2, precio: 120, fecha: ISODate("2024-11-17T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a06") },
+   { producto: "Webcam 1080p", cantidad: 1, precio: 45, fecha: ISODate("2024-11-18T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a07") },
+   { producto: "Micrófono USB", cantidad: 1, precio: 65, fecha: ISODate("2024-11-19T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a08") },
+   { producto: "Cable HDMI", cantidad: 5, precio: 10, fecha: ISODate("2024-11-20T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a09") },
+   { producto: "Alfombrilla de mouse", cantidad: 1, precio: 15, fecha: ISODate("2024-11-21T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a10") },
+   { producto: "Mouse inalámbrico", cantidad: 1, precio: 14, fecha: ISODate("2024-11-12T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a01") },
+   { producto: "Teclado mecánico", cantidad: 2, precio: 50, fecha: ISODate("2024-11-13T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a02") },
+   { producto: "Monitor 24\"", cantidad: 1, precio: 200, fecha: ISODate("2024-11-14T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a03") },
+   { producto: "Mochila para laptop", cantidad: 3, precio: 35, fecha: ISODate("2024-11-15T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a04") },
+   { producto: "Lámpara LED", cantidad: 1, precio: 25, fecha: ISODate("2024-11-16T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a05") },
+   { producto: "Silla ergonómica", cantidad: 2, precio: 120, fecha: ISODate("2024-11-17T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a06") },
+   { producto: "Webcam 1080p", cantidad: 1, precio: 45, fecha: ISODate("2024-11-18T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a07") },
+   { producto: "Micrófono USB", cantidad: 1, precio: 65, fecha: ISODate("2024-11-19T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a08") },
+   { producto: "Cable HDMI", cantidad: 5, precio: 10, fecha: ISODate("2024-11-20T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a09") },
+   { producto: "Alfombrilla de mouse", cantidad: 1, precio: 15, fecha: ISODate("2024-11-21T00:00:00.000Z"), cliente_id: ObjectId("63e3a1f0e1b4b3f90a1a1a10") }
+ ]);
+
+db.Ventas.updateOne(
+   { producto: "Mouse inhalambrico" },   
+   { $set: { cliente_id: "673414b2e274c4af053962ff" } } 
+)
+
+db.Ventas.updateOne(
+   { producto: "Monitor 32" },   
+   { $set: { cliente_id: "64fcdc0e1a2a45678b0fbb34" } } 
+)
+
+db.Ventas.aggregate([
+   {
+      $lookup: {
+         from: "Clientes",            // Colección a la que se une
+         localField: "cliente_id",     // Campo en `Ventas`
+         foreignField: "_id",          // Campo en `Clientes`
+         as: "cliente_info"            // Nombre del campo para los datos del cliente
+      }
+   },
+   {
+      $unwind: "$cliente_info"         // Descompone el array para mostrar un solo objeto
+   }
+]);
+
+
+
+//ventas por ciudades
+db.Ventas.aggregate([
+   {
+      $lookup: {
+         from: "Clientes",             // Nombre de la colección a unir
+         localField: "cliente_id",      // Campo en `Ventas` que referencia a `Clientes`
+         foreignField: "_id",           // Campo en `Clientes` que corresponde a `cliente_id`
+         as: "cliente_info"             // Nombre del campo para los datos del cliente
+      }
+   },
+   {
+      $unwind: "$cliente_info"          // Descompone el array de `cliente_info`
+   },
+   {
+      $group: {
+         _id: "$cliente_info.ciudad",   // Agrupa por la ciudad del cliente
+         totalVentas: { $sum: "$precio" }, // Suma el campo `precio` de cada venta
+         cantidadVentas: { $sum: 1 }    // Cuenta la cantidad de ventas
+      }
+   },
+   {
+      $sort: { totalVentas: -1 }        // Ordena los resultados de mayor a menor
+   }
+])
+
+db.Ventas.aggregate([
+   {
+      $lookup: {
+         from: "Clientes",                  // Nombre de la colección `Clientes`
+         localField: "cliente_id",           // Campo en `Ventas` que referencia al cliente
+         foreignField: "_id",                // Campo en `Clientes` que corresponde a `cliente_id`
+         as: "cliente_info"                  // El resultado de la unión será guardado en el campo `cliente_info`
+      }
+   },
+   {
+      $unwind: "$cliente_info"               // Descompone el array `cliente_info` para poder acceder a sus campos
+   },
+   {
+      $group: {
+         _id: "$cliente_info.ciudad",        // Agrupa los documentos por la ciudad del cliente
+         totalVentas: { $sum: "$precio" },   // Suma el campo `precio` de cada venta
+         cantidadVentas: { $sum: 1 }         // Cuenta la cantidad de ventas
+      }
+   },
+   {
+      $sort: { totalVentas: -1 }             // Ordena los resultados de mayor a menor en base a `totalVentas`
+   }
+])
